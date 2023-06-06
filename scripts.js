@@ -1,8 +1,13 @@
 const grid = document.querySelector(".grid-main");
 const input = document.querySelector("input");
+const apply_btn = document.querySelector("#apply");
 
+apply_btn.addEventListener('click', () =>{
+    let gridSize= parseInt(input.value);
+    console.log(gridSize);
+    addGrid(gridSize);
+});
 
-console.log(input.value);
 
 const addRow= (range) => {
     let row = document.createElement('div');
@@ -18,9 +23,12 @@ const addRow= (range) => {
 }
 
 const addGrid = (range) => {
+
+    while(grid.firstChild != null){
+        grid.removeChild(grid.firstChild);
+    }
     for(let i=0; i<range; i++){
         addRow(range);
     }
 }
 
-addGrid(10);
