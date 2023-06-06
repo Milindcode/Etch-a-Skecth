@@ -15,7 +15,7 @@
 
 .grid-region{
     flex: 3;
-    background-color: rgb(241, 144, 144);
+    
 
     height: 90vh;
     width: 500px;
@@ -43,6 +43,7 @@
     border-color: rgb(255, 255, 255);
     border-width: 1px;
     flex: 1;
+    background-color: red;
 }
 
 
@@ -50,3 +51,7 @@
     flex:1;
 }
 
+#apply{
+    padding: 5%;
+    background-color: chartreuse;
+}
