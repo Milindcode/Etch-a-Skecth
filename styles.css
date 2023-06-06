@@ -1,0 +1,52 @@
+*{
+    border: none;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+.heading{
+    background-color: aqua;
+}
+
+.main-window{
+    display: flex;
+    background-color: antiquewhite;
+}
+
+.grid-region{
+    flex: 3;
+    background-color: rgb(241, 144, 144);
+
+    height: 90vh;
+    width: 500px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-main{
+    height: 90%;
+    min-width: 90%  ;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+}
+
+.row{
+    display: flex;
+    flex:1;
+}
+
+.cell{
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    border-width: 1px;
+    flex: 1;
+}
+
+
+.settings{
+    flex:1;
+}
+
