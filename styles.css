@@ -4,13 +4,16 @@
     box-sizing: border-box;
 }
 
+body{
+    background-image: linear-gradient(to right, #12C2E9, #F64F59);
+    background-image: linear-gradient(to right, #9e1f63, #392d91);
+}
 .heading{
     background-color: aqua;
 }
 
 .main-window{
-    display: flex;
-    background-color: antiquewhite;
+    display: flex;   
 }
 
 .grid-region{
@@ -31,6 +34,9 @@
     background-color: aqua;
     display: flex;
     flex-direction: column;
+    border-style: solid;
+    border-width: 5px;
+    border-color: rgb(122, 0, 57);
 }
 
 .row{
@@ -40,18 +46,32 @@
 
 .cell{
     border-style: solid;
-    border-color: rgb(255, 255, 255);
+    border-color:rgb(246, 22, 126);
     border-width: 1px;
     flex: 1;
-    background-color: red;
+    background-color: rgb(255, 212, 240);
 }
 
 
 .settings{
     flex:1;
+    height: 100vh;
+    display: inline-flex;
+    gap: 100px;
 }
 
+
+#grid-value{
+    color: #c09fb0;
+}
+
+
 #apply{
-    padding: 5%;
-    background-color: chartreuse;
+    padding: 3% 10%;
+    border-radius: 10px;
+    background-color: rgb(246, 22, 126, 0);
+    border-style: solid;
+    border-width:medium;
+    color: #F64F59;
+
 }
