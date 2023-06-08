@@ -9,7 +9,10 @@ body{
     background-image: linear-gradient(to right, #9e1f63, #392d91);
 }
 .heading{
-    background-color: aqua;
+    /* background-color: aqua; */
+    padding: 2%;
+    text-align: center;
+    color:rgb(235, 196, 88);
 }
 
 .main-window{
@@ -30,7 +33,7 @@ body{
 
 .grid-main{
     height: 90%;
-    min-width: 90%  ;
+    min-width: 60%  ;
     background-color: aqua;
     display: flex;
     flex-direction: column;
@@ -56,13 +59,63 @@ body{
 .settings{
     flex:1;
     height: 100vh;
-    display: inline-flex;
-    gap: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    gap: 10%;
+}
+
+.grid-size-setting{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.slider-setting{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.color-setting{
+    font-size: larger;
+    color: rgb(237, 106, 242);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#color-picker{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    width: 50px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+}
+
+
+#color-picker::-webkit-color-swatch {
+    border-radius: 50%;
+    border: 3px solid #000000;
+}
+
+
+#color-picker::-moz-color-swatch {
+    border-radius: 50%;
+    border: 3px solid #000000;
 }
 
 
 #grid-value{
-    color: #c09fb0;
+    color: #f5f5f5;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 

@@ -20,11 +20,20 @@
         </div>
 
         <div class="settings">
-            <input type="range" min="0" max="100" value="10" id="grid-side" oninput="document.getElementById('grid-value').innerText = this.value + ' X '+ this.value">
-            <p id="grid-value">10 X 10</p>
 
-            <button id="apply">APPLY</button>
-            
+            <div class="grid-size-setting">
+                <div class="slider-setting">
+                    <input type="range" min="0" max="100" value="10" id="grid-side" oninput="document.getElementById('grid-value').innerText = this.value + ' X '+ this.value">
+                    <p id="grid-value">10 X 10</p>
+                </div>
+
+                <button id="apply">APPLY</button>
+            </div>
+
+            <div class="color-setting">
+                <p>Pick a color:</p>    
+                <input type="color" id="color-picker">
+            </div>
 
         </div>
     </div>
