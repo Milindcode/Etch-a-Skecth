@@ -1,8 +1,7 @@
 const grid = document.querySelector(".grid-main");
-const input = document.querySelector("input");
+const input = document.querySelector("#grid-side");
 const apply_btn = document.querySelector("#apply");
-
-
+const color= document.querySelector("#color-picker");
 
 
 apply_btn.addEventListener('click', () =>{
@@ -10,6 +9,24 @@ apply_btn.addEventListener('click', () =>{
     console.log(gridSize);
     addGrid(gridSize);
 });
+
+
+color.addEventListener('change', ()=>{
+    const color2= document.querySelector("#color-picker");
+    console.log(color2.value);
+    addColor(color2.input);
+});
+
+function addColor(color){
+    const cells= document.querySelectorAll('.cell');
+    console.log(cells);
+
+    cells.forEach((cell) =>{
+        cell.addEventListener('mouseenter', () =>{
+            cell.style.backgroundColor = color;
+        })
+    })
+}
 
 
 const addRow= (range) => {
@@ -34,16 +51,8 @@ const addGrid = (range) => {
         addRow(range);
     }
 
+    addColor(color.value);
 
-
-    const cells= document.querySelectorAll('.cell');
-    console.log(cells);
-
-    cells.forEach((cell) =>{
-        cell.addEventListener('mouseenter', () =>{
-            cell.style.backgroundColor = 'black';
-        })
-    })
 }
 
 addGrid(10);
