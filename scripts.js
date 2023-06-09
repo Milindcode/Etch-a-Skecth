@@ -33,7 +33,15 @@ color.addEventListener("input", ()=>{
 
 
 eraser.addEventListener('click', ()=>{
+
     color_var='rgb(255, 212, 240)';
+    const cells= document.querySelectorAll('.cell');
+
+    cells.forEach((cell) =>{
+        cell.addEventListener('mouseenter', () =>{
+            cell.style.backgroundColor = color_var;
+        })
+    })
 });
 
 clear_btn.addEventListener('click' , ()=>{
