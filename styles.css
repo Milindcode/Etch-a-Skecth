@@ -5,7 +5,7 @@
 }
 
 body{
-    background-image: linear-gradient(to right, #12C2E9, #F64F59);
+    
     background-image: linear-gradient(to right, #9e1f63, #392d91);
 }
 .heading{
@@ -33,7 +33,7 @@ body{
 
 .grid-main{
     height: 90%;
-    min-width: 60%  ;
+    min-width: 70%  ;
     background-color: aqua;
     display: flex;
     flex-direction: column;
@@ -49,7 +49,7 @@ body{
 
 .cell{
     border-style: solid;
-    border-color:rgb(246, 22, 126);
+    border-color:rgb(244, 140, 189);
     border-width: 1px;
     flex: 1;
     background-color: rgb(255, 212, 240);
@@ -57,7 +57,7 @@ body{
 
 
 .settings{
-    flex:1;
+    flex:2;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -69,7 +69,7 @@ body{
 .grid-size-setting{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: right;
     justify-content: center;
     gap: 20px;
 }
@@ -126,5 +126,29 @@ body{
     border-style: solid;
     border-width:medium;
     color: #F64F59;
+}
 
+
+/* #vibrant{
+    margin-top: 100%;
+} */
+
+.utilities{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20%;
+    margin-top: 30%;
+}
+
+.util{
+    border: none;
+    border-radius: 5%;
+    padding: 5% 7%;
+    min-width: 130px;
+    background-image: linear-gradient(to right, #12C2E9, #F64F59);
+    color:rgb(25, 5, 73) ;
+    font-size: large;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
